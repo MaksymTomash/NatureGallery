@@ -36,7 +36,7 @@
 
     <section class="gallery">
         <figure class="gallery-item">
-            <img src="img/Ранковий%20туман.jpg" alt="Ранковий туман над полем">
+            <img src="img/Ранковий%20туман.jpg" alt="Ранковий туман над полем" data-description="Туман, що огортає поля вранці, створює неймовірно загадкову атмосферу над річкою Здвиж.">
             <figcaption class="caption-wrapper">
                 <h3 class="title">Ранковий туман над річкою Здвиж</h3>
                 <p class="description">Київська область, річка Здвиж</p>
@@ -44,7 +44,7 @@
         </figure>
 
         <figure class="gallery-item">
-            <img src="img/Захід%20сонця.jpg" alt="Захід сонця біля річки">
+            <img src="img/Захід%20сонця.jpg" alt="Захід сонця біля річки" data-description="Захід сонця, який розфарбовує небо над річкою Буг в м'яких помаранчевих і рожевих відтінках.">
             <figcaption class="caption-wrapper">
                 <h3 class="title">Захід сонця над річкою Буг</h3>
                 <p class="description">Річка Буг, Україна</p>
@@ -52,7 +52,7 @@
         </figure>
 
         <figure class="gallery-item">
-            <img src="img/Синевир.jpg" alt="Синевир">
+            <img src="img/Синевир.jpg" alt="Синевир" data-description="Озеро Синевир – одне з найкрасивіших і найбільших озер України, розташоване серед Карпатських гір.">
             <figcaption class="caption-wrapper">
                 <h3 class="title">Озеро Синевир</h3>
                 <p class="description">Національний природний парк Синевир, Закарпаття</p>
@@ -60,7 +60,7 @@
         </figure>
 
         <figure class="gallery-item">
-            <img src="img/Кучугури.jpg" alt="Кучугури">
+            <img src="img/Кучугури.jpg" alt="Кучугури" data-description="Прекрасний природний ландшафт Кучугур на півдні України, відомий своїми піщаними дюнами і приголомшливими пейзажами.">
             <figcaption class="caption-wrapper">
                 <h3 class="title">Великі і Малі Кучугури</h3>
                 <p class="description">Одеська область, Кучугури</p>
@@ -68,7 +68,7 @@
         </figure>
 
         <figure class="gallery-item">
-            <img src="img/Кругосхили.png" alt="Крутосхили Каховського водосховища">
+            <img src="img/Кругосхили.png" alt="Крутосхили Каховського водосховища" data-description="Крутосхили Каховського водосховища, відомі своїми мальовничими схилами та захоплюючими видами на водну гладь.">
             <figcaption class="caption-wrapper">
                 <h3 class="title">Крутосхили Каховського водосховища</h3>
                 <p class="description">Херсонська область, Каховське водосховище</p>
@@ -76,13 +76,26 @@
         </figure>
 
         <figure class="gallery-item">
-            <img src="img/Бузький%20Гард.jpeg" alt="Національний природний парк «Бузький Гард»">
+            <img src="img/Бузький%20Гард.jpeg" alt="Національний природний парк «Бузький Гард»" data-description="Національний природний парк «Бузький Гард» — це захоплююче місце, де Дніпро обігріває скелясті береги та утворює неповторні пейзажі.">
             <figcaption class="caption-wrapper">
                 <h3 class="title">Національний природний парк «Бузький Гард»</h3>
                 <p class="description">Миколаївська область, Бузький Гард</p>
             </figcaption>
         </figure>
     </section>
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <img id="modal-image" src="" alt="Велика картинка" class="modal-image">
+            <div class="modal-text">
+                <h3 class="modal-title" id="modal-title"></h3>
+                <p class="modal-description" id="modal-description"></p>
+                <div class="modal-buttons">
+                    <span class="modal-location" id="modal-location"></span>
+                    <button class="modal-button" id="modal-button">Закрити</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer>
@@ -127,5 +140,6 @@
     </div>
 </footer>
 <script src="burger-menu.js"></script>
+<script src="picture.js"></script>
 </body>
 </html>
